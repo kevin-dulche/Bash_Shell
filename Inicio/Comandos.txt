@@ -1,0 +1,75 @@
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls
+LICENSE  README.md  prueba.txt
+ubuntu@PC-DULCHE:~/Bash_Shell$ vim 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls -l 1_utilityPostgres.sh
+-rw-r--r-- 1 ubuntu ubuntu 123 Jun 13 22:15 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ cat 1_utilityPostgres.sh
+# !/bin/bash
+# Programa para realizar algunas operaciones utilitarias de Postgres
+
+echo "Hola bienvenido al curso de Bash"
+ubuntu@PC-DULCHE:~/Bash_Shell$ pwd
+/home/ubuntu/Bash_Shell
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls -l 1_utilityPostgres.sh
+-rw-r--r-- 1 ubuntu ubuntu 123 Jun 13 22:15 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ chmod 764 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls -l 1_utilityPostgres.sh
+-rwxrw-r-- 1 ubuntu ubuntu 123 Jun 13 22:15 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ chmod 764 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ chmod 664 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls -l 1_utilityPostgres.sh
+-rw-rw-r-- 1 ubuntu ubuntu 123 Jun 13 22:15 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ chmod +x 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls -l 1_utilityPostgres.sh
+-rwxrwxr-x 1 ubuntu ubuntu 123 Jun 13 22:15 1_utilityPostgres.sh
+ubuntu@PC-DULCHE:~/Bash_Shell$ bash 1_utilityPostgres.sh
+Hola bienvenido al curso de Bash
+ubuntu@PC-DULCHE:~/Bash_Shell$ ./1_utilityPostgres.sh
+Hola bienvenido al curso de Bash
+ubuntu@PC-DULCHE:~/Bash_Shell$ cat ../.vimrc
+set showmode
+set autoindent
+set tabstop=4
+set expandtab
+syntax on
+ubuntu@PC-DULCHE:~/Bash_Shell$ man type
+No manual entry for type
+ubuntu@PC-DULCHE:~/Bash_Shell$ info type
+info: No menu item 'type' in node '(dir)Top'
+ubuntu@PC-DULCHE:~/Bash_Shell$ type ls
+ls is aliased to `ls --color=auto'
+ubuntu@PC-DULCHE:~/Bash_Shell$ type cd
+cd is a shell builtin
+ubuntu@PC-DULCHE:~/Bash_Shell$ type -a ls
+ls is aliased to `ls --color=auto'
+ls is /usr/bin/ls
+ls is /bin/ls
+ubuntu@PC-DULCHE:~/Bash_Shell$ ls
+1_utilityPostgres.sh  Inicio  LICENSE  README.md  prueba.txt
+ubuntu@PC-DULCHE:~/Bash_Shell$ type 1_utilityPostgres.sh
+-bash: type: 1_utilityPostgres.sh: not found
+ubuntu@PC-DULCHE:~/Bash_Shell$ cd ..
+ubuntu@PC-DULCHE:~$ cat .vimrc
+set showmode
+set autoindent
+set tabstop=4
+set expandtab
+syntax on
+ubuntu@PC-DULCHE:~$ cd Bash_Shell/
+ubuntu@PC-DULCHE:~/Bash_Shell$ type ls
+ls is aliased to `ls --color=auto'
+ubuntu@PC-DULCHE:~/Bash_Shell$ type -t cd
+builtin
+ubuntu@PC-DULCHE:~/Bash_Shell$ type for
+for is a shell keyword
+ubuntu@PC-DULCHE:~/Bash_Shell$ type -a cd
+cd is a shell builtin
+ubuntu@PC-DULCHE:~/Bash_Shell$ type -t cd
+builtin
+
+Archivo .vimrc
+set showmode
+set autoindent
+set tabstop=4
+set expandtab
+syntax on
